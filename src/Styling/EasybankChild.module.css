@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.container img {
+    width: 60px;
+}
+
+.container h4 {
+    margin: 20px 0px;
+    font-size: 16px;
+    font-weight: 800;
+    color: hsl(233, 26%, 24%);
+}
+
+.container span {
+    font-size: 14px;
+    color:  hsl(233, 26%, 24%);
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 990px) {
+    .container {
+        align-items: center;
+    }
+
+    .container span {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        width: 100%
+    }
+}

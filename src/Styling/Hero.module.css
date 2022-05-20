@@ -1,0 +1,49 @@
+.container {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    height: 500px;    
+}
+
+.text__div {
+    width: 100%;
+}
+
+.text__div h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.text__div p {
+    margin: 30px 0px;
+    font-size: 0.9rem;
+    padding-right: 100px;
+    line-height: 1.6;
+    color: hsl(233, 8%, 62%)
+}
+
+.text__div button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #31d35c, #9698a6);
+}
+
+.text__div button:hover {
+    background-image: linear-gradient(to right, rgba(49, 211, 92, 0.7), rgba(150, 152, 166, 0.7));
+}
+
+.hero__img {
+    height: 160%;
+    position: relative;
+    top: 30px;
+    padding-left: 80px;
+    background-image: url("../Images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+}

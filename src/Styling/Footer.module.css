@@ -1,0 +1,120 @@
+.footer__container {
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 100px;
+    padding: 50px 100px;
+}
+
+.footer__logo path {
+    z-index: 1;
+    fill: white;
+    stroke: currentColor;
+}
+
+.footer__logo__SM {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.footer__SM {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__SM img {
+    cursor: pointer;
+}
+
+.footer__navigation {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__navigation ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer__navigation ul li a {
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+}
+
+.footer__navigation ul li a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.footer__copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+.footer__copyrights span {
+    color: hsl(0, 0%, 98%);
+}
+
+.footer__copyrights button {
+    width: 160px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #31d35c, #9698a6);
+}
+
+.footer__copyrights button:hover {
+    background-image: linear-gradient(to right, rgba(49, 211, 92, 0.7), rgba(150, 152, 166, 0.7));
+}
+
+@media only screen and (max-width: 1056px) {
+    .footer__container {
+        gap: 50px;
+    }
+
+    .footer__navigation {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 961px) {
+    .footer__container {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .footer__container {
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    .footer__logo__SM {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer__navigation {
+        align-items: center;
+        gap: 80px;
+        justify-content: center;
+    }
+
+    .footer__copyrights {
+        margin-left: 0;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,33 @@
+.container {
+    min-height: 100px;
+    background-color: hsl(220, 16%, 96%);
+    padding: 120px 100px;
+}
+.container h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: hsl(233, 26%, 24%);
+}
+
+.container p {
+    font-size: .9rem;
+    margin: 40px 0px;
+}
+
+.container p span {
+    display: block;
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between
+}
+
+@media only screen and (max-width: 990px) {
+    .container h1,
+    .container p {
+        text-align: center;
+    }
+}

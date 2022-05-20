@@ -6,6 +6,7 @@
 
 body {
   font-family: Public Sans;
+  max-width: 1440px;
 }
 
 .container {
@@ -13,8 +14,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 30px 110px;
-  padding-bottom: 30px;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: relative;
+  z-index: 5;
+  min-height: 100px;
 }
 
 .navigation__open {
@@ -27,11 +31,32 @@ body {
 .navigation__open li {
   list-style-type: none;
   cursor: pointer;
+  position: relative;
+  display: block;
+  padding: 39px 0px;
+  height: 100%
+}
+
+.navigation__open li::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to right, #31d35c, #9698a6);;
+  height: 5px;
+  bottom: 0;
+  width: 100%;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.navigation__open li:hover::before {
+  transform: scale(1)
 }
 
 .navigation__open li a {
   color: black;
   text-decoration: none;
+  
 }
 
 .btn__invite {
@@ -65,18 +90,19 @@ body {
   .navigation__open {
     position: absolute;
     flex-direction: column;
+    gap: 0px;
     align-items: center;
-    top: 110px;
+    top: 100px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     padding: 40px 0px;
     z-index: 3;
     transform: scale(0);
   }
-  
+
   .navigation__open li a {
     font-size: 25px;
   }
@@ -84,4 +110,5 @@ body {
 
 .navigation__mobile {
   transform: scale(1);
+  background-color: white;
 }
