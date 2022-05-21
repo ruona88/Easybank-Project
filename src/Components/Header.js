@@ -20,8 +20,8 @@ export default function Header () {
     
     return (
         <section className = {headerCSS.container} >
-           <div>
-              <img src = {logo} alt = ""/>
+           <div tabindex = "1">
+              <img src = {logo} alt = ""  className = {headerCSS.logo}/>
            </div>
 
            <nav>
@@ -30,14 +30,14 @@ export default function Header () {
 
               >
                 <li onClick = {closeMobileNav}  ><a href = "#">Home</a></li>
-                <li onClick = {closeMobileNav} ><a href = "#" >About</a></li>
-                <li onClick = {closeMobileNav} ><a href = "#" >Contact</a></li>
-                <li onClick = {closeMobileNav} ><a href = "#" >Blog</a></li>
+                <li onClick = {closeMobileNav}  ><a href = "#" >About</a></li>
+                <li onClick = {closeMobileNav}  ><a href = "#" >Contact</a></li>
+                <li onClick = {closeMobileNav}  ><a href = "#" >Blog</a></li>
                 <li onClick = {closeMobileNav} ><a href = "#" >Careers</a></li>
               </ul>
            </nav>
 
-           <button className = {headerCSS.btn__invite} >Request Invite</button>
+           <button className = {headerCSS.btn__invite}>Request Invite</button>
 
            <div className = {headerCSS.hamburger} >
               <img 

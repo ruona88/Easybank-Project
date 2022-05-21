@@ -14,11 +14,11 @@ export default function Footer () {
            <div className = {footer.footer__logo__SM} >
               <IconLogo  className = {footer.footer__logo} alt = ""/>
               <div className = {footer.footer__SM} >
-                <img src = {facebook} alt = "" />
-                <img src = {youtube} alt = "" />
-                <img src = {twitter} alt = "" />
-                <img src = {pinterest} alt = "" />
-                <img src = {instagram} alt = "" />
+                <img src = {facebook} alt = "" title = "facebook"/>
+                <img src = {youtube} alt = "" title = "youtube"/>
+                <img src = {twitter} alt = "" title = "twitter"/>
+                <img src = {pinterest} alt = "" title = "pinterest"/>
+                <img src = {instagram} alt = "" title = "instagram"/>
               </div>
             </div>
 

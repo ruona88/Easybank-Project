@@ -1,25 +1,28 @@
+body {
+    overflow-x: hidden;
+}
+
 .container {
     background-color: hsl(0, 0%, 98%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 100px;
-    height: 500px;    
+    padding-left: 100px; 
+    height: 500px;
 }
 
 .text__div {
-    width: 100%;
+    width: 50%;
 }
 
 .text__div h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem,4.5vw,5rem);
     font-weight: 300;
 }
 
 .text__div p {
     margin: 30px 0px;
-    font-size: 0.9rem;
-    padding-right: 100px;
+    font-size: clamp(0.8rem, 1.25vw, 3rem);
     line-height: 1.6;
     color: hsl(233, 8%, 62%)
 }
@@ -37,13 +40,110 @@
     background-image: linear-gradient(to right, rgba(49, 211, 92, 0.7), rgba(150, 152, 166, 0.7));
 }
 
-.hero__img {
-    height: 160%;
-    position: relative;
-    top: 30px;
-    padding-left: 80px;
+.hero__img__container {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url("../Images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
+    background-size: 600px;
+    background-position:  top;
+}
+
+.hero__img {
+    height: 100%;
+    width: 100%;
+    transform: scaleY(1.4) translateX(60px);
+}
+
+@media only screen and (max-width: 1075px) {
+
+    .hero__img {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container {
+        flex-direction: column-reverse;
+        height: fit-content;
+        gap: 0px;
+        position: relative;
+        top: -320px;
+        margin-bottom: -320px;
+        
+    }
+
+    .text__div {
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        padding: 40px ;
+    }
+
+    .hero__img__container {
+        width: 100%;
+        height: fit-content;
+        background-image: url("../Images/bg-intro-mobile.svg");
+        background-position: top;
+        background-size: cover;
+    }
+
+    .hero__img {
+        width: 100%;
+        height: 100%;
+        transform: scaleY(1) translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 0px 50px;
+        height: fit-content;
+        gap: 0px;
+        position: relative;
+        top: -240px;
+        margin-bottom: -240px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .container {
+        top: -180px;
+        margin-bottom: -180px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        top: -150px;
+        margin-bottom: -150px;
+    }
+
+    .text__div h1 {
+        font-size: 2rem;
+    }
+
+    .text__div p {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .container {
+        top: -150px;
+        margin-bottom: -150px;
+    }
+
+    .text__div h1 {
+        font-size: 1.8rem;
+    }
+
+    .text__div p {
+        font-size: 0.5rem;
+    }
 }

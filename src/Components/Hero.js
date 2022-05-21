@@ -12,9 +12,11 @@ export default function Hero () {
                 <button>Request Invite</button>
             </div>
             
-            <img src = {mockups} alt = "" className = {hero.hero__img}/>
-           
+            <div className = {hero.hero__img__container} >
+              <img src = {mockups} alt = "" className = {hero.hero__img}/>
+            </div>
         </section>
         
     )
 }
+
